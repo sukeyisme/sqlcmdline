@@ -421,7 +421,7 @@ def handle_datetimeoffset(dto_value):
 def connect_and_get_cursor():
     global cursor
     global conninfo
-    connection = (f"Driver={{SQL Server Native Client 11.0}};"
+    connection = (f"Driver={{ODBC Driver 13 for SQL Server}};"
                   f"Server={conninfo.server};"
                   f"Database={conninfo.database};")
     if not conninfo.user:
